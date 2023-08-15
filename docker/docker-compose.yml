@@ -6,13 +6,13 @@ services:
       - "8080:80"
     volumes:
       - ./nginx/nginx.conf:/etc/nginx/conf.d/nginx.conf
-      - ../src:/var/www
+      - ../app:/var/www
   php:
     build:
       context: ..
       dockerfile: ./docker/php/Dockerfile
     volumes:
-      - ../src:/var/www
+      - ../app:/var/www
   mysql:
     image: mariadb:latest
     environment:

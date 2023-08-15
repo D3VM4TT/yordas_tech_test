@@ -1,0 +1,9 @@
+{
+    "name": "yordas/app",
+    "autoload": {
+        "psr-4": {
+            "Yordas\\App\\": "src/"
+        }
+    },
+    "require": {}
+}
