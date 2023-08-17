@@ -2,6 +2,8 @@
 
 require '../vendor/autoload.php';
 
+use Yordas\App\Services\BankHolidayAPI;
+use Yordas\App\Services\BankHolidayDisplay;
 use Yordas\App\Services\ChemicalValidator;
 
 $valid_hive_id = 'ID123456';
@@ -24,3 +26,9 @@ var_dump(ChemicalValidator::isValidCASNumber('7732-18-6'));
 var_dump(ChemicalValidator::isValidCASNumber('7732123-18-6'));
 var_dump(ChemicalValidator::isValidCASNumber('7-18-6'));
 var_dump(ChemicalValidator::isValidCASNumber('64-17-5'));
+
+$apiUrl = "https://www.gov.uk/bank-holidays.json";
+$api = new BankHolidayAPI($apiUrl);
+$futureBankHolidays = $api->getFutureBankHolidays();
+var_dump($futureBankHolidays);
+
