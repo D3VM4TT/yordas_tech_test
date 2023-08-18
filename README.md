@@ -36,7 +36,7 @@ PHPUnit tests can be run be doing the below:
    ```sh
    docker exec -it docker_php_1 bash
    ```
-2. Make sure you are in the `/var/www directory`
+2. Make sure you are in the `/var/www` directory
 3. Run the below command to run the tests
    ```sh
    vendor/bin/phpunit tests
