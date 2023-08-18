@@ -30,3 +30,16 @@ I will be adding unit tests to this project at a later stage, for now, all the t
 7. Project should be running at [http://127.0.0.1:8080/](http://127.0.0.1:8080/)
 
 
+### Tests
+PHPUnit tests can be run be doing the below:
+1. Open a interactive shell in the docker php container
+   ```sh
+   docker exec -it docker_php_1 bash
+   ```
+2. Make sure you are in the /var/www directory
+3. Run the below command to run the tests
+   ```sh
+   vendor/bin/phpunit tests
+   ``` 
+
+
