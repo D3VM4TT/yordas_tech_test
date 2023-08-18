@@ -27,6 +27,6 @@ I will be adding unit tests to this project at a later stage, for now, all the t
    ```sh
    composer install
    ```
-7. Project should be running at [http://127.0.0.1:8800/](http://127.0.0.1:8080/)
+7. Project should be running at [http://127.0.0.1:8080/](http://127.0.0.1:8080/)
 
 
